@@ -3,3 +3,7 @@
 启动
 
 `python manage.py runserver`
+
+`index`
+
+`api/upload` 上传图片接口
