@@ -30,7 +30,7 @@ def testapi(request):
 @csrf_exempt
 def upload(request):
     if request.method == 'GET':
-        resp = {'code': 100, 'type': 'get', 'data': {'message':'post上传'}}
+        resp = {'code': 100,  'data': {'message':'post上传'}}
         return HttpResponse(json.dumps(resp), content_type="application/json")
     elif request.method == "POST":
         obj = request.FILES.get('file')
